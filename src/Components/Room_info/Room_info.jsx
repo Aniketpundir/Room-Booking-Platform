@@ -14,12 +14,6 @@ import { Navigation } from "swiper/modules";
 
 const Room_info = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const images = [
-        Room1,
-        Room2,
-        Room3,
-        Room4,
-    ];
 
     const media = [
         { type: 'video', src: Room_video },
@@ -30,11 +24,11 @@ const Room_info = () => {
     ];
 
     const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % images.length);
+        setCurrentSlide((prev) => (prev + 1) % media.length);
     };
 
     const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+        setCurrentSlide((prev) => (prev - 1 + media.length) % images.length);
     };
 
     const [data, setData] = useState({
@@ -165,9 +159,10 @@ const Room_info = () => {
                     <div className="slider">
                         <button onClick={prevSlide} className="slider-btn left">&#10094;</button>
                         {media[currentSlide].type === 'image' ? (
-                            <img src={media[currentSlide].src} alt="Room Images" className="main-image" />
+                            <img loading='lazy' src={media[currentSlide].src} alt="Room Images" className="main-image" />
                         ) : (
                             <video
+                                loading='lazy'
                                 src={media[currentSlide].src}
                                 className="main-image"
                                 controls
