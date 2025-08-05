@@ -1,0 +1,187 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.room-section {
+    flex: 1;
+    margin-bottom: 40px;
+}
+
+.room-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: 70vh;
+    border-radius: 8px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-btn.left {
+    left: 10px;
+}
+
+.slider-btn.right {
+    right: 10px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
+
+.room-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.room-location p {
+    font-size: 17px;
+}
+
+.room-booking {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 10px;
+    gap: 0px;
+}
+
+.room-booking hr {
+    margin: 20px 0;
+}
+
+.landlord-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+
+.landlord-details label {
+    font-size: 18px;
+}
+
+.landlord-details img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.landlord-details p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.landlord-details p span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.description h1 {
+    font-weight: 500;
+    color: #3b3b3b;
+    text-decoration: underline;
+}
+
+.Book-Room {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Book-Room h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Book-Room form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.Book-Room form input {
+    padding: 8px 12px;
+    margin-bottom: 20px;
+}
+
+.Book-Room form button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: aliceblue;
+    background-color: #234ca2;
+    border: none;
+    cursor: pointer;
+}
+
+.Facilities-Rules {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Facilities h2,
+.Landlord_Rules h2 {
+    font-family: 18px;
+    font-weight: 500;
+    color: #3b3b3b;
+}
+
+.Facilitie,
+.Landlord_Rule {
+    margin-left: 30px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    color: black;
+    font-size: 17px;
+}
+
+.similar-properties h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.similar-properties-slider {
+    margin-bottom: 20px;
+}

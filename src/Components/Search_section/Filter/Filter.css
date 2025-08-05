@@ -1,0 +1,74 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 280px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.filter-content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #4c4b4b;
+}
+
+.filter-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.budget-content,
+.Room-type,
+.facility-type {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.budget {
+    display: flex;
+    gap: 10px;
+}
+
+.budget input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.Room,
+.facility {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.Room label,
+.facility label {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+.search-button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #234ca2;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}

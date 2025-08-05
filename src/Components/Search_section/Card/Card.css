@@ -1,0 +1,55 @@
+.room-card {
+    margin: 10px;
+    border: 1.5px solid #8f8d8d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img-distance {
+    margin: 8px 10px;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+}
+
+.img-distance img {
+    height: 90%;
+    border-radius: 10px;
+}
+
+.img-distance p {
+    font-size: 14px;
+    color: #3b3b3b;
+}
+
+.type-distance {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-content {
+    margin: 8px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-name-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room-name-price h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.room-name-price h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.location {
+    font-size: 16px;
+    color: #3b3b3b;
+}
