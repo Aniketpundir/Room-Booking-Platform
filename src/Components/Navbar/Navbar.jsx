@@ -24,6 +24,7 @@ const Navbar = () => {
                 Home
               </li>
             </Link>
+
             <Link to="/About">
               <li
                 className={`button ${activeItem === "About Us" ? "clicked" : ""
