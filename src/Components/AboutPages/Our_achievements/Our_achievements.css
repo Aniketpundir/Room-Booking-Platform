@@ -1,0 +1,36 @@
+.Our_achievements {
+    display: flex;
+    flex-direction: row;
+    margin: 7% 10%;
+    border: 2px solid #1c1c1cbf;
+    padding: 25px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.Our_achievements .Our_achievements_img {
+    width: 50%;
+}
+
+.Our_achievements .Our_achievements_img img {
+    width: 100%;
+    border-radius: 20px;
+    border: 1 solid #1c1c1cbf;
+}
+
+.Our_achievements .Our_achievements_text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Our_achievements .Our_achievements_text h3 {
+    font-size: 26px;
+    font-weight: 500;
+    color: #2d4bb4;
+}
+
+.Our_achievements .Our_achievements_text p {
+    color: #1c1c1cbf;
+}

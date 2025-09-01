@@ -34,7 +34,7 @@ const LogIn = () => {
       <img src={logo} alt="Company Logo" />
       <div className="login-content">
         <div className="login-text">
-          <h1>Log in</h1>
+          <h1>Log in as a User</h1>
           <p>Welcome back! Please enter your details</p>
         </div>
         <div className="login-form">
@@ -55,6 +55,7 @@ const LogIn = () => {
         <span>Forgot password?</span>
       </div>
       <p className="navigate-page">Don't have an account? <button onClick={() => Navigate('/SignUp')}>Sign Up</button></p>
+      <p className="Landloard-Register">Register as a Landlord :  <button onClick={() => Navigate('/landlord-register')}>Click Here.</button></p>
     </div>
   </>;
 };

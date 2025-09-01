@@ -24,34 +24,10 @@ const Navbar = () => {
                 Home
               </li>
             </Link>
-
-            <Link to="/Landlords">
-              <li
-                className={`button ${
-                  activeItem === "Landlords" ? "clicked" : ""
-                }`}
-                onClick={() => handleClick("Landlords")}
-              >
-                Landlords
-              </li>
-            </Link>
-
-            <Link to="/Erasmus_Life">
-              <li
-                className={`button ${
-                  activeItem === "Erasmus Life" ? "clicked" : ""
-                }`}
-                onClick={() => handleClick("Erasmus Life")}
-              >
-                Erasmus Life
-              </li>
-            </Link>
-
             <Link to="/About">
               <li
-                className={`button ${
-                  activeItem === "About Us" ? "clicked" : ""
-                }`}
+                className={`button ${activeItem === "About Us" ? "clicked" : ""
+                  }`}
                 onClick={() => handleClick("About Us")}
               >
                 About Us

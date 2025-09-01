@@ -1,24 +1,8 @@
 import React, { useState } from "react";
 import "./Header.css";
 import Image from "../../assets/hero_image.jpg";
+import Counting from "../Counting/Counting";
 
-const counting = [
-  {
-    id: 1,
-    Number: "4235",
-    type: "Room",
-  },
-  {
-    id: 2,
-    Number: "535",
-    type: "Reservation",
-  },
-  {
-    id: 1,
-    Number: "19905",
-    type: "Students",
-  },
-];
 
 const Header = () => {
   return (
@@ -33,19 +17,7 @@ const Header = () => {
               Want to find an accommodation? We are ready to <br /> help you
               find one that suits your lifestyle and needs.
             </p>
-            <div className="header-digits">
-              {counting.map((items, index) => {
-                return (
-                  <div key={index} className="counting">
-                    <h1>
-                      {items.Number}
-                      <span>+</span>
-                    </h1>
-                    <p>{items.type}</p>
-                  </div>
-                );
-              })}
-            </div>
+            <Counting />
           </div>
           <div className="header-image" data-aos="fade-left">
             <img src={Image} alt="hero-image" />

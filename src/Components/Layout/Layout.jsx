@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 const Layout = () => {
   const location = useLocation();
 
-  const hideLayoutPaths = ["/login", "/signup"];
+  const hideLayoutPaths = ["/login", "/signup", "/landlord-register", "/landlord-login"];
 
   const shouldHideLayout = hideLayoutPaths.includes(location.pathname.toLowerCase());
   return (

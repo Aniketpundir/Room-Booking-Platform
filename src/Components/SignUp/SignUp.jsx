@@ -38,7 +38,7 @@ const SignUp = () => {
     <div className="SignUp">
       <div className="SihnUp-content">
         <div className="SignUp-text">
-          <h1>Sign Up</h1>
+          <h1>Sign Up as User</h1>
         </div>
         <div className="SignUp-form">
           <form>
