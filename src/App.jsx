@@ -16,6 +16,8 @@ import Search_section from "./Components/Search_section/Search_section";
 import Room_info from "./Components/Room_info/Room_info"
 import Landlord_SignUp from "./Components/Landlord_Panel/Landlord_ SignUp/Landlord_ SignUp";
 import Landlord_Login from "./Components/Landlord_Panel/Landlord_Login/Landlord_Login";
+import UserProfile from "./Components/User_Profile_Details/UserProfile/UserProfile";
+import RoomApplication from "./Components/User_Profile_Details/RoomApplication/RoomApplication";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +32,8 @@ const router = createBrowserRouter(
       <Route path="/Search_Section/Room_info/:id" element={<Room_info />} />
       <Route path="/landlord-register" element={<Landlord_SignUp />} />
       <Route path="/landlord-login" element={<Landlord_Login />} />
+      <Route path="/user-profile" element={<UserProfile />} />
+      <Route path="/room-application" element={<RoomApplication />} />
     </Route>
   )
 );

@@ -9,8 +9,10 @@
     width: 15%;
 }
 
-.navbar-left img {
+.navbar-left .logo {
     width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .navbar-middele ul {
@@ -19,12 +21,14 @@
     list-style: none;
     gap: 15px;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar-middele ul .button {
     cursor: pointer;
     color: #1c1c1cbf;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .navbar-middele ul .clicked {
@@ -33,18 +37,104 @@
     transform: scale(1.05);
 }
 
-.navbar-right button {
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-right .login-button {
     padding: 5px 25px;
     border-radius: 20px;
     border: 1px solid #1c1c1cbf;
-    transition: 0.5s;
+    transition: 0.3s;
     background: transparent;
     cursor: pointer;
     color: #1c1c1cbf;
 }
 
-.navbar-right button:hover {
+.navbar-right .login-button:hover {
     background-color: #2d4bb4;
     color: #fff;
     border: 1px solid #fff;
+}
+
+.navbar-login-profile {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    right: 10;
+}
+
+.login-profile-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-profile-img .navbar-login-profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login-profile-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.login-profile-options {
+    position: absolute;
+    top: 100%;
+    left: 120%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-width: 200px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-left: -100px;
+}
+
+.navbar-login-profile:hover .login-profile-options {
+    display: flex;
+}
+
+.login-profile-options ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.login-profile-options ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: black;
+}
+
+.login-profile-options ul li:hover {
+    background: #f5f5f5;
+}
+
+.login-profile-options ul li p,
+.login-profile-options ul li button {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
