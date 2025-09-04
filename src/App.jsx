@@ -7,6 +7,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Pages/Home/Home";
 import LogIn from "./Components/LogIn/LogIn";
@@ -54,6 +55,7 @@ const App = () => {
 
   return (
     <>
+      <ToastContainer />
       <div>
         <RouterProvider router={router} />
       </div>
