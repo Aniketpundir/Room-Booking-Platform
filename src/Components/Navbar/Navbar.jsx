@@ -87,7 +87,7 @@ const Navbar = () => {
                 <Link to="/room-application">
                   <li>
                     <CiBookmark />
-                    <p>Room Applications</p>
+                    <p>Your Booked Property</p>
                   </li>
                 </Link>
                 <hr />

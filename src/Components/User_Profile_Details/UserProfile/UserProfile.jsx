@@ -3,7 +3,9 @@ import "./UserProfile.css"
 
 const UserProfile = () => {
     return (
-        <div>UserProfile</div>
+        <>
+            <div>Hello User Profile</div>
+        </>
     )
 }
 

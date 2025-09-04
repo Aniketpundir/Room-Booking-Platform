@@ -1,0 +1,68 @@
+.booked-room-details {
+    margin: 20px 0;
+}
+
+.booked-room-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h1 {
+    color: #1c1c1cfe;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.section-title hr {
+    margin: 0 40px;
+}
+
+.booked-room-list-details {
+    margin: 20px 6%;
+}
+
+.booked-room-list-details-title hr {
+    margin-top: 10px;
+}
+
+.booked-room-list-details-title ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.booked-room-list-details-title ul li {
+    color: #1c1c1cbf;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.items-lists {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.items-list .items-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-lists {
+    width: 100%;
+}
+
+.items-list img {
+    width: 5%;
+    height: 7vh;
+}
+
+.items-list p {
+    color: rgba(0, 0, 0, 0.732);
+}
